@@ -115,6 +115,9 @@ location / {
 	rewrite ^/style/(.*)/				/style.php?css=$1 last;
 	rewrite ^/style/(.*)				/style.php?css=$1 last;
 
+	rewrite ^/user/(.*)/				/user.php?user_name=$1 last;
+	rewrite ^/user/(.*)				/user.php?user_name=$1 last;
+
 	rewrite ^/privacy/				/user_privacy.php?css=$1 last;
 	rewrite ^/password/				/password_change.php last;
 
